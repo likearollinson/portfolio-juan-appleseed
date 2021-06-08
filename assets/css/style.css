@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Milk, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+header {
+    padding: 40px;
+    text-align: left;
+}
+
+header nav {
+    display: flex;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.list-home {
+    font-weight: bold;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: black;
+    justify-content: flex-end;
+    float: right;
+}
+
+header {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.font-black:link {
+    color: black;
+}
+
+main img {
+    width: 100%;
+    display: flex;
+}
+footer {
+    color: black;
+    padding: 5px;
+    display: left;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.hidden-contact:link {
+    color:white;
+}
+
+@font-face {
+    font-family: Milk;
+    src: url('./assets/fonts/Milk _ Free Font/Milk _ Free Font/Milk.tff');
+    src: /* url('Fonts/SansationLight/SansationLight.eot?#iefix') format('embedded-opentype'), */
+         /* url('Fonts/SansationLight/SansationLight.woff') format('woff'), */
+         /* url('Fonts/SansationLight/SansationLight.svg#SansationLight') format('svg'); */
+         url("./assets/fonts/Milk _ Free Font/Milk _ Free Font/Milk.tff") format("truetype"),
+         url("./assets/fonts/Milk _ Free Font/Milk _ Free Font/Milk.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+      flex-direction: column;
+    }
+    footer, 
+    ul {
+        flex-direction: column;
+    }
+    main {
+        flex-d;
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+      nav{flex-direction: row;
+    }
+  }
